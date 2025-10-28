@@ -1,33 +1,35 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignorar carpetas y archivos generados
+/target/
+*.class
+*.jar
+*.war
+*.ear
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Configuraciones específicas de IDE (IntelliJ, Eclipse, VSCode)
+.idea/
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+*.iws
 .vscode/
+
+# Archivos de sistema operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Configuración de Maven y Gradle
+.mvn/
+build/
+.gradle/
+
+# Archivos de configuración sensible (puedes excluir si están gestionados de otro modo)
+*.properties
+application.properties
+
+# Sincronización de dependencias locales
+.settings/
+
+# Archivos de prueba generados
+test-output/
